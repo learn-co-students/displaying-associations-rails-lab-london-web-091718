@@ -28,7 +28,7 @@ describe "artists", type:  :feature do
   end
 
   it "shows the song count for each artist" do
-    visit artists_path
+    visit artist_path(@artist)
     expect(page).to have_content("2 songs")
   end
 end
